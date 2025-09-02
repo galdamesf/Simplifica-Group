@@ -99,9 +99,6 @@ const WhatsAppFloatingButton = ({
         >
           <WhatsAppIcon size={24} color="white" />
         </button>
-
-        {/* Efecto de pulso de fondo */}
-        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
       </div>
 
       {/* Botón directo de WhatsApp (oculto, para funcionalidad directa) */}
@@ -141,7 +138,7 @@ const HeroSection = () => {
             Start for free
           </a>
           <a href="#" className="py-3 px-4 mx-3 rounded-md border">
-            Documentación
+            Formulario
           </a>
         </div>
         <div className="flex mt-10 justify-center px-10">
@@ -159,7 +156,7 @@ const HeroSection = () => {
             muted
             className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
           >
-            <source src={video2} type="video/mp2" />
+            <source src={video2} type="video/mp4" />
           </video>
         </div>
       </div>

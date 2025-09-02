@@ -10,22 +10,22 @@ import imagen5 from "../assets/imagen5.jpg";
 // Datos de ejemplo para la demo
 const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Líderes en Facility Services",
     description:
       "Grupo Simplifica, un referente en Facility y servicios integrales. Nos destacamos por atender a grandes empresas en los sectores corporativo, retail, alimenticio y comercial",
   },
   {
-    title: "Review code without worry",
+    title: "Eficiencia Garantizada",
     description:
       "Con una sólida trayectoria, hemos brindado soluciones efectivas en Santiago, Valparaíso, Viña del Mar y más. Nuestra capacidad de reacción es excepcional, asegurando respuestas rápidas a cualquier desafío en las locaciones de nuestros clientes",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Compromiso con la Excelencia",
     description:
       "En Grupo Simplifica, no solo ofrecemos servicios, sino que nos convertimos en valiosos partners estratégicos, contribuyendo a la sostenibilidad operativa de nuestros clientes. ",
   },
   {
-    title: "Share work in minutes",
+    title: "Tu Éxito, Nuestro Objetivo",
     description:
       "¡Confía en nosotros para simplificar tus operaciones y potenciar tu éxito empresarial!",
   },
@@ -102,8 +102,14 @@ const Workflow = () => {
             <img
               src={imagen}
               alt="Imagen de código"
-              className="w-full rounded-2xl shadow-lg"
+              className="w-full rounded-t-2xl shadow-lg"
             />
+            <div className="p-4 text-center">
+              <h5 className="text-xl font-semibold text-white">
+                Cristopher Valdés Vergara{" "}
+              </h5>
+              <p className="text-neutral-400">Jefe de proyectos y mantención</p>
+            </div>
           </div>
         </div>
         <div className="pt-12 w-full lg:w-1/2">
