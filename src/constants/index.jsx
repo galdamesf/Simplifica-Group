@@ -13,10 +13,10 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+  { label: "Inicio", href: "#" },
+  { label: "Quiénes somos", href: "#" },
+  { label: "Servicios", href: "#" },
+  { label: "Formulario", href: "#" },
 ];
 
 export const testimonials = [
@@ -61,39 +61,39 @@ export const testimonials = [
 export const features = [
   {
     icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
+    text: "Equipo humano",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Contamos con un equipo humano, de sólidos conocimientos y capacitado bajo los últimos estándares internacionales de seguridad",
   },
   {
     icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
+    text: "Capacidad de reacción",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "Contamos con una alta capacidad de reacción para dar solución a los problemas presentados en locaciones de nuestros clientes",
   },
   {
     icon: <ShieldHalf />,
-    text: "Built-in Templates",
+    text: "Sostenibilidad",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Ofrecemos sostenibilidad en sus operaciones convirtiéndonos en importantes partners estratégicos",
   },
   {
     icon: <BatteryCharging />,
-    text: "Real-Time Preview",
+    text: "Confianza y transparencia",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "Mantenemos una comunicación clara y abierta con nuestros clientes, generando relaciones sólidas y duraderas.",
   },
   {
     icon: <PlugZap />,
-    text: "Collaboration Tools",
+    text: "Experiencia comprobada",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Nuestra trayectoria nos permite ofrecer soluciones adaptadas a cada sector y necesidad, respaldadas por un historial de resultados confiables.",
   },
   {
     icon: <GlobeLock />,
-    text: "Analytics Dashboard",
+    text: "Eficiencia operativa",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Maximizamos el uso de recursos y tiempos, implementando procesos optimizados que aseguran resultados óptimos sin sacrificar calidad ni precisión.",
   },
 ];
 
@@ -101,7 +101,7 @@ export const checklistItems = [
   {
     title: "Code merge made easy",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Grupo Simplifica, un referente en Facility y servicios integrales.",
   },
   {
     title: "Review code without worry",
