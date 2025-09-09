@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo1.png";
 import { navItems } from "../constants";
 
 const Navbar = () => {
@@ -15,7 +15,11 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-15 w-25 mr-2" src={logo} alt="Logo" />
+            <img
+              className="h-20 w-20 mr-2 rounded-full"
+              src={logo}
+              alt="Logo"
+            />
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
