@@ -132,3 +132,5 @@ test.describe("Simplifica Group - Pruebas de Integración", () => {
     await page.screenshot({ path: "screenshot-mobile.png", fullPage: true });
   });
 });
+
+// iniciar testing con: npx playwright test --ui

@@ -27,9 +27,9 @@ export const contactInformation: ContactInformation[] = [
   },
 ];
 
-export const pages: string[] = ["About us", "Job", "Press", "Blog"];
+export const pages: string[] = ["Nosotros", "Servicios", "Clientes"];
 
-export const conditions: string[] = ["Contact us", "Terms", "Privacy"];
+export const conditions: string[] = ["Contacto", "Terminos", "Privacidad"];
 
 export const medias: Media[] = [
   {

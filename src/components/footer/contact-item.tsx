@@ -16,7 +16,7 @@ export const ContactItem = ({ text, iconUrl, alt, link, styles }: Props) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-cyan-400 transition-colors cursor-pointer"
+          className="hover:text-Gray-600 transition-colors cursor-pointer"
         >
           {text}
         </a>

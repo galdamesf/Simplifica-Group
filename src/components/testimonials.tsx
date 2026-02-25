@@ -4,9 +4,13 @@ import { TestimonialCard } from "./testimonial-card";
 
 export const Testimonials = () => {
   return (
-    <div className="mt-20 flex flex-col gap-6 items-center py-10 relative w-[320px] md:w-[480px] mx-auto xl:flex-row xl:w-[920px]">
+    <div
+      className="mt-20 relative w-[320px] md:w-[480px] xl:w-[1100px] mx-auto pb-2 pt-6
+                    grid grid-cols-1 gap-6 
+                    xl:grid-cols-3 items-stretch"
+    >
       <img
-        className="size-6 absolute top-0 left-8"
+        className="size-6 absolute -top-4 left-8"
         src="/images/bg-quotes.png"
         alt="bg quotes"
         style={{

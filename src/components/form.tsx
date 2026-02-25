@@ -54,7 +54,7 @@ export const Form = () => {
   };
 
   return (
-    <div className="mb-[300px] absolute top-[-230px] left-0 right-0 mx-auto text-center py-10 px-6 bg-Navy-850 rounded-[50px] w-[336px] md:w-[480px] xl:w-[720px] shadow-2xl transition-all">
+    <div className="mb-[300px] absolute top-[-250px] left-0 right-0 mx-auto text-center py-10 px-6 bg-Navy-850 rounded-[50px] w-[336px] md:w-[480px] xl:w-[720px] shadow-2xl transition-all">
       <h2 className="font-bold mb-4 text-[20px] text-white uppercase tracking-wider">
         Contáctanos
       </h2>
