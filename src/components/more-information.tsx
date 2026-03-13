@@ -3,7 +3,7 @@ export const MoreInformation = () => {
     <div className="mt-30 pb-15 md:flex md:items-center md:gap-4 max-w-[920px] mx-auto">
       <img
         className="mb-2 md:w-[380px] rounded-xl"
-        src="/images/constructor1.jpg"
+        src="/images/imagen10.jpg"
         alt="illustration stay productive"
       />
 

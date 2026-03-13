@@ -3,6 +3,7 @@ import type {
   Media,
   Feature,
   Testimonial,
+  Team,
 } from "../types/type";
 import { FacebookIcon } from "../components/footer/facebook-Icon";
 import { XIcon } from "../components/footer/x-icon";
@@ -95,4 +96,19 @@ export const testimoninals: Testimonial[] = [
     quote:
       "En Grupo Simplifica, no solo ofrecemos servicios, sino que nos convertimos en valiosos partners estratégicos, contribuyendo a la sostenibilidad operativa de nuestros clientes.",
   },
+];
+
+// TeamSection.tsx
+export const team: Team[] = [
+  { name: "Cristian Valdés", role: "Founder & CEO", image: "/images/user.png" },
+  { name: "Jose Puen", role: "Product Owner", image: "/images/user2.jpg" },
+  { name: "Iva Boyd", role: "Product Manager" },
+  { name: "Carlos Mendoza", role: "Gerente de Operaciones" },
+  { name: "Andrea Rojas", role: "Directora de Proyectos" },
+  { name: "Felipe Soto", role: "Gerente de Construcción" },
+  { name: "Valentina Mora", role: "Jefa de Ingeniería" },
+  { name: "Roberto Fuentes", role: "Gerente Comercial" },
+  { name: "Daniela Castro", role: "Directora de Finanzas" },
+  { name: "Sebastián Reyes", role: "Gerente de Desarrollo" },
+  { name: "Camila Torres", role: "Jefa de Calidad" },
 ];

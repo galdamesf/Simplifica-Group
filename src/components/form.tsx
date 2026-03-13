@@ -58,12 +58,10 @@ export const Form = () => {
       <h2 className="font-bold mb-4 text-[20px] text-white uppercase tracking-wider">
         Contáctanos
       </h2>
-
       <p className="text-sm mb-8 text-white/80">
         Déjanos tus datos y nos pondremos en contacto contigo muy pronto.
       </p>
 
-      {/* Se añade noValidate para permitir que Playwright testee la validación de React */}
       <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -115,7 +113,6 @@ export const Form = () => {
           text={loading ? "Enviando..." : "Enviar"}
         />
       </form>
-
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center z-[100] px-6">
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>

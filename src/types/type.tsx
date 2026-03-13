@@ -37,3 +37,9 @@ export interface Slide {
   image: string;
   isAlternate?: boolean;
 }
+
+export interface Team {
+  name: string;
+  role: string;
+  image?: string;
+}

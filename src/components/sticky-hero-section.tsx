@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+// StickyHeroSection.tsx
+import { useEffect, useRef } from "react";
 
 interface StickyHeroSectionProps {
   title: string;
@@ -12,43 +13,46 @@ export const StickyHeroSection = ({
   backgroundImage,
 }: StickyHeroSectionProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [offset, setOffset] = useState(0);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!titleRef.current || !subtitleRef.current) return;
 
-      const rect = sectionRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
+        if (entry.isIntersecting) {
+          titleRef.current.style.opacity = "1";
+          titleRef.current.style.transform = "translateY(0)";
+          subtitleRef.current.style.opacity = "1";
+          subtitleRef.current.style.transform = "translateY(0)";
+        } else {
+          titleRef.current.style.opacity = "0";
+          titleRef.current.style.transform = "translateY(24px)";
+          subtitleRef.current.style.opacity = "0";
+          subtitleRef.current.style.transform = "translateY(24px)";
+        }
+      },
+      { threshold: 0.1 },
+    );
 
-      // Calculamos qué tan lejos está el centro de la sección del centro de la pantalla
-      const sectionCenter = rect.top + rect.height / 2;
-      const screenCenter = windowHeight / 2;
-      const distanceFromCenter = sectionCenter - screenCenter;
-
-      const speed = 0.2; // Ajusta este valor para más o menos movimiento
-      setOffset(distanceFromCenter * speed);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Ejecutar al inicio para posicionar correctamente
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="relative h-[60vh] md:h-[70vh] overflow-hidden bg-Gray-600"
+      className="relative h-[65vh] md:h-[80vh] overflow-hidden"
     >
-      {/* Imagen con corrección de desplazamiento */}
+      {/* Imagen estática */}
       <div
-        className="absolute inset-0 will-change-transform"
+        className="absolute inset-0"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // El scale(1.3) da más margen para que el translateY no muestre bordes negros
-          transform: `translateY(${offset}px) scale(1.8)`,
+          backgroundRepeat: "no-repeat",
         }}
       />
 
@@ -58,10 +62,26 @@ export const StickyHeroSection = ({
       {/* Texto */}
       <div className="relative z-10 h-full flex items-center justify-center text-center px-6">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl">
+          <h1
+            ref={titleRef}
+            className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl"
+            style={{
+              opacity: 0,
+              transform: "translateY(24px)",
+              transition: "opacity 700ms 300ms, transform 700ms 300ms",
+            }}
+          >
             {title}
           </h1>
-          <p className="text-white mt-6 text-lg md:text-2xl font-light drop-shadow-lg">
+          <p
+            ref={subtitleRef}
+            className="text-white mt-6 text-lg md:text-2xl font-light drop-shadow-lg"
+            style={{
+              opacity: 0,
+              transform: "translateY(24px)",
+              transition: "opacity 700ms 500ms, transform 700ms 500ms",
+            }}
+          >
             {subtitle}
           </p>
         </div>

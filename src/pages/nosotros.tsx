@@ -2,8 +2,8 @@ import {
   Header,
   InfoSection,
   StickyHeroSection,
-  Testimonials,
   Footer,
+  TeamSection,
 } from "../components";
 
 export const Nosotros = () => {
@@ -15,7 +15,7 @@ export const Nosotros = () => {
       <StickyHeroSection
         title="Nuestra Historia y Compromiso"
         subtitle="Conoce más sobre el equipo detrás de tus proyectos"
-        backgroundImage="/images/santiago.jpg"
+        backgroundImage="/images/imagen9.jpg"
       />
 
       <InfoSection
@@ -35,11 +35,11 @@ export const Nosotros = () => {
       <StickyHeroSection
         title="Calidad que trasciende"
         subtitle="Especialistas en estructuras metálicas y obras civiles"
-        backgroundImage="/images/imagen6.jpg"
+        backgroundImage="/images/imagen8.jpg"
       />
 
       <section className="bg-Dark-850 py-32 px-6">
-        <Testimonials />
+        <TeamSection />
       </section>
 
       <section className="bg-Orange-800 p-10 relative rounded-tl-[100px] rounded-tr-[100px] -mt-[20px] md:-mt-[100px] pt-14 py-2">

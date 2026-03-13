@@ -12,3 +12,4 @@ export { Footer } from "./footer/footer";
 export { Contact } from "./contact";
 export { MainJumbotron } from "./jumbotron";
 export { SnapCarousel } from "./snap-carousel";
+export { TeamSection } from "./team-section";
